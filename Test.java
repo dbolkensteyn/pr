@@ -14,6 +14,11 @@ class C1<T extends Exception> extends Object {
   private int f5 = 1
     + 2
     + 3;
+  private Object f6 = new Object(){
+    public String toString() {
+      return "test";
+    }
+  };
 
   /**
    * Bla bla.
