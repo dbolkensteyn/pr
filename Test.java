@@ -1,7 +1,7 @@
 import javax.annotation.Nullable;
 
 /**
- * Some Javadoc <a href="lol.html">hehe</a> haha.
+ * Some Javadoc <a href="lol.html">hehe</a> haha<script>alert('hello');</script>.
  * <i>foo</i> <b>bar</b> haha.
  * <p><another paragraph/p>
  */
