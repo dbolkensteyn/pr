@@ -11,6 +11,9 @@ class C1<T extends Exception> extends Object {
   private @Nullable @Deprecated Object f2;
   private C1 f3;
   private C1<RuntimeException> f4;
+  private int f5 = 1
+    + 2
+    + 3;
 
   /**
    * Bla bla.
