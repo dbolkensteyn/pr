@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 @Deprecated
 class C1<T extends Exception> extends Object {
   private Object f1;
-  private @Nullable Object f2;
+  private @Nullable @Deprecated Object f2;
   private C1 f3;
   private C1<RuntimeException> f4;
 
