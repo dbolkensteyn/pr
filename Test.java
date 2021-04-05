@@ -19,6 +19,7 @@ class C1<T extends Exception> extends Object {
       return "test";
     }
   };
+  String f7 = "hehe";
 
   /**
    * Bla bla.
