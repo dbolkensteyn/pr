@@ -1,5 +1,5 @@
 import javax.annotation.Nullable;
-import org.checkerframework.checker.signedness.qual.Unsigned;
+import org.checkerframework.checker.signedness.qual.*;
 
 /**
  * Some Javadoc <a href="lol.html">hehe</a> haha<script>alert('hello');</script>.
@@ -52,5 +52,8 @@ class C1<T extends Exception> extends Object {
   
   void m5() {
     var l1 = m4();
+    
+    @Acceleration
+    var l2 = m4();
   }
 }
