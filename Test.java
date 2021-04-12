@@ -80,7 +80,11 @@ class C1<T extends Exception> extends Object {
     T l2;
   }
   
-  class C2<T1, T2 extends Exception & Serializable> extends Exception implements Serializable {
+  @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE})
+  @interface TypeUseAnnotation {
+  }
+  
+  class C2<T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
     T1 f1;
     T2 f2;
   }
