@@ -2,6 +2,12 @@ import javax.annotation.Nullable;
 import org.checkerframework.checker.units.qual.*;
 import org.checkerframework.checker.signedness.qual.*;
 
+@java.lang.annotation.Inherited
+@java.lang.annotation.Retention(value=java.lang.annotation.RetentionPolicy.RUNTIME)
+@java.lang.annotation.Target(value={java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.TYPE_PARAMETER})
+public @interface CustomAnnotation {
+}
+
 /**
  * Some Javadoc <a href="lol.html">hehe</a> haha<script>alert('hello');</script>.
  * <i>foo</i> <b>bar</b> haha.
@@ -51,10 +57,19 @@ class C1<T extends Exception> extends Object {
     return 42;
   }
   
+  @CustomAnnotation @Unsigned int m4b() {
+    return 42;
+  }
+  
   void m5() {
     var l1 = m4();
     
     @Acceleration
     var l2 = m4();
+    
+    var l3 = m4b();
+    
+    @Acceleration
+    var l4 = m4b();
   }
 }
