@@ -2,6 +2,8 @@ import javax.annotation.Nullable;
 import org.checkerframework.checker.units.qual.*;
 import org.checkerframework.checker.signedness.qual.*;
 
+import java.io.Serializable;
+
 @java.lang.annotation.Inherited
 @java.lang.annotation.Retention(value=java.lang.annotation.RetentionPolicy.RUNTIME)
 @java.lang.annotation.Target(value={java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.TYPE_PARAMETER})
@@ -77,5 +79,10 @@ class C1<T extends Exception> extends Object {
     T2 l1;
     T l2;
   }
+  
+  class C2<T1, T2 extends Exception, Serializable> extends Exception implements Serializable {
+  }
+  
+  C2<Integer, C2> f8;
 
 }
