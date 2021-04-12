@@ -84,7 +84,7 @@ class C1<T extends Exception> extends Object {
   @interface TypeUseAnnotation {
   }
   
-  class C2<T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
+  class C2<@TypeUseAnnotation T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
     T1 f1;
     T2 f2;
   }
