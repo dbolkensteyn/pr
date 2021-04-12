@@ -72,4 +72,10 @@ class C1<T extends Exception> extends Object {
     @Acceleration
     var l4 = m4b();
   }
+  
+  static <T2 extends Object> void m6() {
+    T2 l1;
+    T l2;
+  }
+
 }
