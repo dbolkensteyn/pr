@@ -1,6 +1,7 @@
 import javax.annotation.Nullable;
 import org.checkerframework.checker.units.qual.*;
 import org.checkerframework.checker.signedness.qual.*;
+import java.util.*;
 
 import java.io.Serializable;
 
@@ -90,5 +91,9 @@ class C1<T extends Exception> extends Object {
   }
   
   C2<Integer, C2> f8;
+  
+  List f9;
+  List<?> f10;
+  List<? extends Number> f11;
 
 }
