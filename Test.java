@@ -48,7 +48,7 @@ class C1<T extends Exception> extends Object {
    * @param p2 some parameter.
    * @return some value.
    */
-  T m2(@Nullable T p2) {
+  T m2(@Signed T p2) {
     System.out.println(p2);
     return null;
   }
