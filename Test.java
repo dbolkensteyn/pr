@@ -49,6 +49,7 @@ class C1<T extends Exception> extends Object {
    * @return some value.
    */
   T m2(@Nullable T p2) {
+    System.out.println(p2);
     return null;
   }
 
