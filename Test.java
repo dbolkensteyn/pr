@@ -82,7 +82,7 @@ class C1<T extends Exception> extends Object {
     T l2;
   }
   
-  @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE})
+  @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType..FIELD})
   @interface TypeUseAnnotation {
   }
   
@@ -105,7 +105,7 @@ class C1<T extends Exception> extends Object {
   
   E1 f13 = E1.A;
   
-  @Signed List f14; 
+  @TypeUseAnnotation List f14; 
   
   int m7(int p1, @Unsigned int p2, int p3, @Signed int p4) {
     return p1 + p2 + p3 + p4;
