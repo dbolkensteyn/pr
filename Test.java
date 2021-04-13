@@ -95,5 +95,7 @@ class C1<T extends Exception> extends Object {
   List f9;
   List<?> f10;
   List<? extends Number> f11;
+  
+  Unknown<?> f12;
 
 }
