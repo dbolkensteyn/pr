@@ -98,4 +98,11 @@ class C1<T extends Exception> extends Object {
   
   Unknown<?> f12;
 
+  enum E1 {
+    A, B, C;
+  }
+  
+  E1 f13 = E1.A;
+  
+  @Signed List f14; 
 }
