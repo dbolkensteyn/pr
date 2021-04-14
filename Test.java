@@ -82,7 +82,7 @@ class C1<T extends Exception> extends Object {
     T l2;
   }
   
-  @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType..FIELD})
+  @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.FIELD})
   @interface TypeUseAnnotation {
   }
   
