@@ -78,7 +78,7 @@ class C1<T extends Exception> extends Object {
   }
   
   static <T2 extends Object> void m6() {
-    T2 l1;
+    T2 l1; // Wtf
     T l2;
   }
   
@@ -87,8 +87,8 @@ class C1<T extends Exception> extends Object {
   }
   
   class C2<@TypeUseAnnotation T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
-    T1 f1;
-    T2 f2;
+    T1 f1; // Wtf
+    T2 f2; // Wtf
   }
   
   C2<Integer, C2> f8;
