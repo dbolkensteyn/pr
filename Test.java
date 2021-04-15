@@ -79,8 +79,14 @@ class C1<T extends Exception> extends Object {
   }
   
   final <T2 extends Object> void m6() {
-    T2 l1; // Wtf
+    T2 l1;
     T l2;
+  }
+  
+  <T2, T3> void m6() {
+    T l0;
+    T2 l1;
+    T3 l2;
   }
   
   @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.FIELD})
@@ -88,8 +94,8 @@ class C1<T extends Exception> extends Object {
   }
   
   class C2<@TypeUseAnnotation T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
-    T1 f1; // Wtf
-    T2 f2; // Wtf
+    T1 f1;
+    T2 f2;
   }
   
   C2<Integer, C2> f8;
