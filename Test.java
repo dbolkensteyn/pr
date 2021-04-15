@@ -78,7 +78,7 @@ class C1<T extends Exception> extends Object {
     var l4 = m4b();
   }
   
-  static <T2 extends Object> void m6() {
+  final <T2 extends Object> void m6() {
     T2 l1; // Wtf
     T l2;
   }
