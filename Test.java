@@ -8,7 +8,7 @@ import java.io.Serializable;
 class Cyclic0 extends Cyclic0 {
 }
 
-class Cyclic1<T extends Cyclic0<T>> {
+class Cyclic1<T extends Cyclic1<T>> {
 }
 
 @java.lang.annotation.Inherited
