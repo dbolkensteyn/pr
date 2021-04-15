@@ -96,6 +96,7 @@ class C1<T extends Exception> extends Object {
   class C2<@TypeUseAnnotation T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
     T1 f1;
     T2 f2;
+    @TypeUseAnnotation T2 f3;
   }
   
   C2<Integer, C2> f8;
