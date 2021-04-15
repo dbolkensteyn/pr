@@ -83,7 +83,7 @@ class C1<T extends Exception> extends Object {
     T l2;
   }
   
-  <T2, T3> void m6() {
+  <T2, T3> void m6b() {
     T l0;
     T2 l1;
     T3 l2;
