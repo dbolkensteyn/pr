@@ -11,7 +11,7 @@ class Cyclic0 extends Cyclic0 {
 class Cyclic1<T extends Cyclic1<T>> {
 }
 
-class Cyclic2<T> {
+abstract class Cyclic2<T> {
   abstract <T extends Cyclic2<T>> void m(T p);
 }
 
