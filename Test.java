@@ -11,6 +11,10 @@ class Cyclic0 extends Cyclic0 {
 class Cyclic1<T extends Cyclic1<T>> {
 }
 
+class Cyclic2<T> {
+  abstract <T extends Cyclic2<T>> void m(T p);
+}
+
 @java.lang.annotation.Inherited
 @java.lang.annotation.Retention(value=java.lang.annotation.RetentionPolicy.RUNTIME)
 @java.lang.annotation.Target(value={java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.TYPE_PARAMETER})
