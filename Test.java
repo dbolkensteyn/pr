@@ -104,6 +104,7 @@ class C1<T extends Exception> extends Object {
   List f9;
   List<?> f10;
   List<  /* foo */  ? extends Number> f11;
+  List<  @TypeUseAnnotation  ? extends Number> f11b;
   
   Unknown<?> f12;
 
