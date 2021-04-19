@@ -146,4 +146,16 @@ class C1<T extends Exception> extends Object {
   int @TypeUseAnnotation[] fa2;
   int @TypeUseAnnotation[][] fa3;
   int @TypeUseAnnotation[] @TypeUseAnnotation[] fa4;
+  
+  void m8() {
+    java.util.List<String> myList =
+    java.util.Arrays.asList("a1", "a2", "b1", "c2", "c1");
+
+    myList
+      .stream()
+      .filter(s -> s.startsWith("c"))
+      .map(String::toUpperCase)
+      .sorted()
+      .forEach(System.out::println);
+  }
 }
