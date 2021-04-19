@@ -71,6 +71,10 @@ class C1<T extends Exception> extends Object {
     return 42;
   }
   
+  int m4(Object p1, Object p2) {
+    return 0;
+  }
+  
   @Deprecated
   @CustomAnnotation @Unsigned int m4b() {
     return 42;
