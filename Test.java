@@ -104,6 +104,10 @@ class C1<T extends Exception> extends Object {
     int l3 = 0;
   }
   
+  int m6b(Object p1) {
+    return 0;
+  }
+  
   @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.FIELD})
   @interface TypeUseAnnotation {
   }
