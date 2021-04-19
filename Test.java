@@ -141,4 +141,9 @@ class C1<T extends Exception> extends Object {
   int m7(int p1, @Unsigned int p2, int p3, @Signed int p4) {
     return p1 + p2 + p3 + p4;
   }
+  
+  int[] fa1;
+  int @TypeUseAnnotation[] fa2;
+  int @TypeUseAnnotation[][] fa3;
+  int @TypeUseAnnotation[] @TypeUseAnnotation[] fa4;
 }
