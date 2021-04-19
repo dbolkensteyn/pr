@@ -40,6 +40,9 @@ class C1<T extends Exception> extends Object {
       return "test";
     }
   };
+  private Object f6b = new Runnable(){
+    public void run(){}
+  };
   String f7 = "hehe";
 
   /**
