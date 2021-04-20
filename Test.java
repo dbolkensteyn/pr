@@ -166,4 +166,15 @@ class C1<T extends Exception> extends Object {
     m9(0, 1, 2, 3, 4, 5);
     return p1 + p2 + ps.length;
   }
+  
+  Object m10() {
+    try {
+    } catch (ArrayIndexOutOfBoundsException e) {
+      return e;
+    } catch (IllegalStateException|UnsupportedOperationException e) {
+      return e;
+    }
+
+    return null;
+  }
 }
