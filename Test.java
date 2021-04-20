@@ -226,4 +226,7 @@ class C1<T extends Exception> extends Object {
       System.out.println(super.f);
     }
   }
+  
+  class CNested {}
+  class CNestedChild extends CNested {}
 }
