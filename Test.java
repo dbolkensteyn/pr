@@ -179,4 +179,30 @@ class C1<T extends Exception> extends Object {
 
     return null;
   }
+  
+    class CBase {
+    CBase(String p1) {
+    }
+
+    void moo() {
+    }
+  }
+
+  class CChild extends CBase {
+    CChild() {
+      this(42);
+    }
+
+    CChild(int p1) {
+      super("" + p1);
+
+      super.moo();
+      this.moo();
+      moo();
+    }
+
+    @Override
+    void moo() {
+    }
+  }
 }
