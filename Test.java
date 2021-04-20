@@ -180,7 +180,7 @@ class C1<T extends Exception> extends Object {
     return null;
   }
   
-    class CBase {
+  class CBase {
     CBase(String p1) {
     }
 
