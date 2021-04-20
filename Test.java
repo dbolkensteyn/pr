@@ -253,4 +253,9 @@ class C1<T extends Exception> extends Object {
   }
   
   @TypeUseAnnotation(foo = "abcèà!\nこんにちは") int f15;
+  
+  void m13() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("Hello!");
+  }
 }
