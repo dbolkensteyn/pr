@@ -180,7 +180,15 @@ class C1<T extends Exception> extends Object {
     return null;
   }
   
-  class CRoot {
+  static class CRoot {
+    static int f = 0;
+
+    static {
+      Runnable a = () -> {
+        f = 1;
+      };
+      a.run();
+    }
   }
   
   class CBase extends CRoot {
