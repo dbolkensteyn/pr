@@ -161,4 +161,8 @@ class C1<T extends Exception> extends Object {
       .sorted()
       .forEach(System.out::println);
   }
+
+  int m9(int p1, int p2, int... ps) {
+    return p1 + p2 + ps.length;
+  }
 }
