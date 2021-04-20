@@ -180,10 +180,14 @@ class C1<T extends Exception> extends Object {
     return null;
   }
   
-  class CBase {
+  class CRoot {
+  }
+  
+  class CBase extends CRoot {
     int f;
 
     CBase(String p1) {
+      super();
     }
 
     void moo() {
