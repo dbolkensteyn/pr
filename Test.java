@@ -113,6 +113,7 @@ class C1<T extends Exception> extends Object {
   
   @java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.FIELD})
   @interface TypeUseAnnotation {
+    String foo() default "";
   }
   
   class C2<@TypeUseAnnotation T1, T2 extends @TypeUseAnnotation Exception & Serializable> extends Exception implements Serializable {
@@ -250,4 +251,6 @@ class C1<T extends Exception> extends Object {
   private <T> void m12Helper(List<T> l) {
     l.set(0, l.get(0));
   }
+  
+  @TypeUseAnnotation(foo = "abcèà!\nこんにちは") int f15;
 }
