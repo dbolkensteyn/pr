@@ -229,4 +229,17 @@ class C1<T extends Exception> extends Object {
   
   class CNested {}
   class CNestedChild extends CNested {}
+  
+  void m11() {
+    class CLocal {
+      void moo() {
+      }
+    }
+    
+    class CLocalChild extends CLocal {
+      void ba() {
+        moo();
+      }
+    }
+  }
 }
