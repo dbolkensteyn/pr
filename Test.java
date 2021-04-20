@@ -242,4 +242,12 @@ class C1<T extends Exception> extends Object {
       }
     }
   }
+  
+  void m12(List<?> i) {
+    m12Helper(i);
+  }
+
+  private <T> void m12Helper(List<T> l) {
+    l.set(0, l.get(0));
+  }
 }
