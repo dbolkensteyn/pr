@@ -181,14 +181,20 @@ class C1<T extends Exception> extends Object {
   }
   
   class CBase {
+    int f;
+
     CBase(String p1) {
     }
 
     void moo() {
+      System.out.println(f);
+      System.out.println(this.f);
     }
   }
 
   class CChild extends CBase {
+    int f;
+
     CChild() {
       this(42);
     }
@@ -203,6 +209,9 @@ class C1<T extends Exception> extends Object {
 
     @Override
     void moo() {
+      System.out.println(f);
+      System.out.println(this.f);
+      System.out.println(super.f);
     }
   }
 }
