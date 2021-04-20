@@ -258,4 +258,7 @@ class C1<T extends Exception> extends Object {
     StringBuilder sb = new StringBuilder();
     sb.append("Hello!");
   }
+  
+  public static void m14(java.util.List<? super Integer> p1) {
+  }
 }
