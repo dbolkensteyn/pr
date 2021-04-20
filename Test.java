@@ -163,6 +163,7 @@ class C1<T extends Exception> extends Object {
   }
 
   int m9(int p1, int p2, int... ps) {
+    m9(0, 1, 2, 3, 4, 5);
     return p1 + p2 + ps.length;
   }
 }
