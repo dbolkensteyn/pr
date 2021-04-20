@@ -259,6 +259,6 @@ class C1<T extends Exception> extends Object {
     sb.append("Hello!");
   }
   
-  public static void m14(java.util.List<? super Integer> p1) {
+  public static void m14(java.util.List<? super Integer> p1, List<? extends List> p2, List<? super ArrayList> p3) {
   }
 }
