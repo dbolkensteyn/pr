@@ -175,6 +175,8 @@ class C1<T extends Exception> extends Object {
       return e;
     }
 
+    var l1 = (java.io.Serializable & Runnable) () -> System.out.println();
+
     return null;
   }
 }
