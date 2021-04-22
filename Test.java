@@ -300,6 +300,6 @@ class C1<T extends Exception> extends Object {
     CLocal
       m;
     
-    return a + b + p1 + f16 + m.a;
+    return a + b + p1 + f16 + m.a + m15(0, 0);
   }
 }
