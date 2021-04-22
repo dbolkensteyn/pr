@@ -261,4 +261,45 @@ class C1<T extends Exception> extends Object {
   
   public static void m14(java.util.List<? super Integer> p1, List<? extends List> p2, List<? super ArrayList> p3) {
   }
+  
+  int
+    f16
+    ;
+  
+  public
+    <
+    T
+    >
+    int
+    m15
+   (int 
+   p1
+   ) {
+    int
+      a
+      ,
+      b
+      ;
+    T a;
+    
+    try {}
+    catch (Exception
+          e
+          ) {
+      throw new RuntimeException(e);
+    }
+    
+    class
+      CLocal
+    {
+      int
+        a
+        ;
+    }
+    
+    CLocal
+      m;
+    
+    return a + b + p1 + f16 + m.a;
+  }
 }
