@@ -291,10 +291,19 @@ class C1<T extends Exception> extends Object {
     
     class
       CLocal
+      <
+      T2
+      >
     {
       int
         a
         ;
+      
+      T
+        b;
+      
+      T2
+        c;
     }
     
     CLocal
