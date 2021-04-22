@@ -280,7 +280,7 @@ class C1<T extends Exception> extends Object {
       ,
       b
       ;
-    T a;
+    T c;
     
     try {}
     catch (Exception
