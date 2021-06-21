@@ -311,4 +311,8 @@ class C1<T extends Exception> extends Object {
     
     return a + b + p1 + f16 + m.a + m15(0, 0);
   }
+  
+  void m15() {
+    System.out.println(Integer.MAX_VALUE);
+  }
 }
